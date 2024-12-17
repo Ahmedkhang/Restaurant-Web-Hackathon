@@ -17,7 +17,7 @@ export default function HeroSection() {
                     <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 text-center text-white">
                         <h1 className="text-4xl md:text-5xl font-bold">Our Chefs</h1>
                         <h5 className="py-3 text-sm md:text-base">
-                            Home > <span className="text-[#FF9F0D]">Our Chefs</span>
+                            Home &gt;<span className="text-[#FF9F0D]">Our Chefs</span>
                         </h5>
                     </div>
                 </div>

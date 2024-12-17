@@ -1,5 +1,5 @@
 // import HeroSection from "@/components/Hero";
-import HomePage from '@/components/home';
+
 import Image from "next/image";
 import Link from 'next/link';
 

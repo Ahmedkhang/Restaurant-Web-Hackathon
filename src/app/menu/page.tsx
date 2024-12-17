@@ -27,7 +27,7 @@ export default function Menu() {
                 <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 text-white text-center">
                     <h1 className="text-4xl sm:text-5xl font-bold">Menu</h1>
                     <h5 className="py-3 text-sm sm:text-base">
-                     <Link href='/home'>Home</Link> > <span className="text-[#FF9F0D]">Menu</span>
+                     <Link href='/home'>Home</Link> &gt;<span className="text-[#FF9F0D]">Menu</span>
                     </h5>
                 </div>
             </div>

@@ -7,14 +7,14 @@ import { IoPlayOutline } from "react-icons/io5";
 
 export default function Aboutus() {
   return (
-<>
-<Navbar />           
-            {/* // Main div  */}
+     <>
+    
+    <Navbar />
+         {/* // Main div  */}
             <div className='relative w-[1920px] text bg-white' >
-
-            {/* 2nd div bg-Image */}
-            <div className='w-[1920px]  text-center'>
-                <Image 
+         {/* 2nd div bg-Image */}
+             <div className='w-[1920px]  text-center'>
+                 <Image 
                 src='/bg-image.png'
                 alt=''
                 width={1920}
@@ -23,13 +23,13 @@ export default function Aboutus() {
                 />
                 <div className='w-full text-white absolute text-center top-40 left-0 items-center'>
                     <h1 className='text-5xl font-bold'>About Us</h1>
-                    <h5 className='py-3'>Home > <span className='text-[#FF9F0D]'>About</span></h5>
+                    <h5 className='py-3'>Home &gt;About</h5>
                 </div>
             </div>
 
             
             
-        </div>
+    
 
 
     <div>
@@ -127,7 +127,7 @@ export default function Aboutus() {
           <Image
             className=""
             src="/about6.png"
-            width={80} height={80}
+            width={80} height={80} 
             alt="blog"
           />
           <div className="p-6">
@@ -160,9 +160,10 @@ export default function Aboutus() {
     </div>
   </div>
 </section>
+</div> 
 </div>
   
-    </>
+     </>
+    
   )
-}
-
+  }
