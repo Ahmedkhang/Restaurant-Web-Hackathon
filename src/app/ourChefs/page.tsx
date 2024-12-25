@@ -1,8 +1,9 @@
 import Image from 'next/image';
-
+import Navbar from '@/components/Navbar/Navbar';
 export default function HeroSection() {
     return (
         <>
+        <Navbar />
             {/* Main div */}
             <div className="relative w-full bg-white">
                 {/* 2nd div bg-Image */}

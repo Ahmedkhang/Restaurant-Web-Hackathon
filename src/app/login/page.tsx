@@ -3,12 +3,13 @@ import Link from "next/link";
 import { IoChevronForwardOutline } from "react-icons/io5";
 import { FcGoogle } from "react-icons/fc";
 import { ImAppleinc } from "react-icons/im";
+import Navbar from '@/components/Navbar/Navbar';
 
 export default function SignInPage() {
   return (
 <>
-            
-      <div className='w-[1920px]  text-center'>
+            <Navbar />
+      <div className='w-full  text-center'>
       <Image 
       src='/bg-image.png'
       alt=''
@@ -16,9 +17,9 @@ export default function SignInPage() {
       height={410}
 
       />
-      <div className='w-full text-white absolute text-center top-40 left-0 items-center'>
-          <h1 className='text-5xl font-bold'>FAQ</h1>
-          <h5 className='py-3'>Home &gt; <span className='text-[#FF9F0D]'>FAQ</span></h5>
+      <div className='w-full text-white absolute text-center top-14 lg:top-40 left-0 items-center'>
+          <h1 className='text-lg lg:text-5xl font-bold'>Login</h1>
+          <h5 className='py-3 text-md '>Home &gt; <span className='text-[#FF9F0D]'>Login</span></h5>
       </div>
   </div>
 
@@ -30,7 +31,7 @@ export default function SignInPage() {
       {/* Signin Form */}
       <section className="py-16">
         <div className="container mx-auto max-w-md bg-white shadow-lg rounded-md p-8">
-          <h3 className="text-2xl font-bold mb-6 text-center">Sign In</h3>
+          <h3 className="text-2xl font-bold mb-6 text-center">Login</h3>
           <form>
             <div className="mb-4">
               <label className="block mb-2 font-medium">Name</label>

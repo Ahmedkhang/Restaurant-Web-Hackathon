@@ -10,17 +10,17 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const menuItems = [
-    { name: "Home", url: "/home", active: true },
+    { name: "Home", url: "/", active: true },
     { name: "Menu", url: "/menu"},
     { name: "Blog", url: "/BlogPage" },
-    { name: "Blog Details", url: "/BlogDetails" },
+    { name: "Blog Details", url: "/BlogPage/BlogDetails" },
     { name: "About", url: "/about" },
     { name: "Shop", url: "/shop" },
-    { name: "Chefs", url: "/chefs" },
+    { name: "Chefs", url: "/ourChefs" },
   ]
 
   return (
-    <header className="w-[1920px] bg-[#0D0D0D] top-0 px-4 sm:px-6 lg:px-[15.62%] py-4 lg:py-7">
+    <header className="w-full lg:w-[1920px] bg-[#0D0D0D] top-0 px-4 sm:px-6 lg:px-[15.62%] py-4 lg:py-7">
       <nav className="flex items-center justify-between">
         {/* Logo */}
         <Link

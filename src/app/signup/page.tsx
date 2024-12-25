@@ -8,13 +8,14 @@ import { ImAppleinc } from "react-icons/im";
 export default function SignUpPage() {
   return (
     <>
+    <Navbar />
           {/* Header Section */}
           <div className="w-full relative text-center">
             <Image src="/bg-image.png" alt="" width={1920} height={410} layout="responsive" />
             <div className="w-full text-white absolute top-1/2 transform -translate-y-1/2">
-              <h1 className="text-4xl md:text-5xl font-bold">Shop Details</h1>
+              <h1 className="text-xl md:text-5xl font-bold">Shop Details</h1>
               <h5 className="py-3 text-base md:text-lg">
-                Home &gt; <span className="text-[#FF9F0D]">Shop Details</span>
+                Home &gt; <span className="text-[#FF9F0D]">Sign up</span>
               </h5>
             </div>
           </div>
@@ -24,7 +25,7 @@ export default function SignUpPage() {
       <div className="min-h-screen bg-white">  
       {/* Signup Form */}
       <section className="py-16">
-        <div className="container mx-auto max-w-md bg-white shadow-lg rounded-md p-8">
+        <div className="container md:mx-auto max-w-md bg-white shadow-lg rounded-md p-8">
           <h3 className="text-2xl font-bold mb-6 text-center">Sign Up</h3>
           <form>
             <div className="mb-4">

@@ -1,12 +1,8 @@
-import Image from 'next/image';
-import img3 from '@/assets/shoppingcart/img3.png';
-import img4 from '@/assets/shoppingcart/img4.png'
-import img5 from '@/assets/shoppingcart/img5.png';
-
+import Image from 'next/image'
 import Navbar from '@/components/Navbar/Navbar';
 export default function ShoppingCart() {
     return(
-        <>
+      <>
 
         <Navbar />
 
@@ -22,21 +18,34 @@ export default function ShoppingCart() {
                     </div>
                   </div>
 
-        <div className='w-[1920px] h-[1500px] bg-white'>
-            <div className='w-[1320px] mx-[300px] pt-[130px]'>
-              <Image src={img3} alt='' width={1320} height={600} layout='responsive' />
-            </div>
+                  <div className='w-full lg:w-[1920px] lg:mx-[300px] bg-white lg:pt-[130px'>
+                    <Image 
+                    src='/shoppingcart2.png'
+                    alt=''
+                    width={1320}
+                    height={720}
+                    layout='responsive'
+                    />
 
-            <div className='w-[1320px] mx-[300px] pt-[130px] h-[400px] flex'>
-                <div className='w-[648px] h-[252px]'>
-                    <Image src={img5} alt='' width={648} height={252} />
-                </div>
-                <div className='w-[648px] h-[337px]'>
-                <Image src={img4} alt='' width={648} height={337} />
-                </div>
-            </div>
+                    <div className='lg:flex'>
+                      
+                  
+                     <Image
+                     src='/shoppingcart3.png'
+                     alt=''
+                     width={648}
+                     height={252}
+                     layout='responsive'
+                     
+                     />
+                     <Image  src='/shoppingcart4.png' alt='' width={648} height={337} layout='responsive' />
+                    
+                    </div>
 
-        </div>
-        </>
+                  </div>
+
+ </>       
     )
 }
+
+

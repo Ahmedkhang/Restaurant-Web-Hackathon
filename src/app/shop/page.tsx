@@ -51,14 +51,14 @@ export default function Shop() {
               <div className="flex flex-wrap justify-center gap-6">
                 {/* Product Cards */}
                 {[
-                  { src: "/assets/shop/lime.png", title: "Fresh Lime", price: "$38.00" },
-                  { src: "/assets/shop/muffin.png", title: "Chocolate Muffin", price: "$28.00" },
-                  { src: "/assets/shop/burger.png", title: "Burger", price: "$21.00" },
-                  { src: "/assets/shop/burger2.png", title: "Country Burger", price: "$45.00" },
-                  { src: "/assets/shop/pizza.png", title: "Pizza", price: "$43.00" },
-                  { src: "/assets/shop/butter.png", title: "Cheese Butter", price: "$10.00" },
-                  { src: "/assets/shop/sandwich.png", title: "Sandwiches", price: "$25.00" },
-                  { src: "/assets/shop/chicken.png", title: "Chicken Chup", price: "$12.00" },
+                  { src: "/shopimg1.png", title: "Fresh Lime", price: "$38.00" },
+                  { src: "/shopimg2.png", title: "Chocolate Muffin", price: "$28.00" },
+                  { src: "/shopimg3.png", title: "Burger", price: "$21.00" },
+                  { src: "/shopimg4.png", title: "Country Burger", price: "$45.00" },
+                  { src: "/shopimg5.png", title: "Pizza", price: "$43.00" },
+                  { src: "/shopimg6.png", title: "Cheese Butter", price: "$10.00" },
+                  { src: "/shopimg7.png", title: "Sandwiches", price: "$25.00" },
+                  { src: "/shopimg8.png", title: "Chicken Chup", price: "$12.00" },
                 ].map((item, index) => (
                   <div
                     key={index}
@@ -82,7 +82,7 @@ export default function Shop() {
               {/* Pagination */}
               <div className="mt-8 flex justify-center">
                 <Image
-                  src="/assets/shop/pagination.png"
+                  src="/shopimg9.png"
                   alt="Pagination"
                   width={200}
                   height={6}
@@ -124,7 +124,7 @@ export default function Shop() {
                 ].map((cat, index) => (
                   <div key={index} className="flex items-center mb-2">
                     <Image
-                      src="/rectangle.png"
+                      src="/shopimg12.png"
                       alt="Category Icon"
                       width={14}
                       height={14}
@@ -136,21 +136,21 @@ export default function Shop() {
               </div>
 
               <Image
-                src="/banner.png"
+                src="/shopimg13.png"
                 alt="Banner"
                 width={248}
                 height={286}
                 className="mt-6 w-full"
               />
               <Image
-                src="/products.png"
+                src="/shopimg10.png"
                 alt="Products"
                 width={252}
                 height={368}
                 className="mt-6 w-full"
               />
               <Image
-                src="/products2.png"
+                src="/shopimg11.png"
                 alt="Products2"
                 width={252}
                 height={368}

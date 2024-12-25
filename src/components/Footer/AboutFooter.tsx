@@ -2,9 +2,9 @@ import { Clock } from 'lucide-react'
 
 export default function AboutUsSection() {
   return (
-    <div className='w-[395.2px]'>
+    <div className='w-full lg:w-[395.2px]'>
       <h3 className="text-xl font-bold mb-8">About Us.</h3>
-      <p className="mb-6 text-[18px] leading-[26px]">
+      <p className="mb-6 text-[14px] lg:text-[18px] leading-[26px]">
         Corporate clients and leisure travelers have been relying on Groundlink for dependable safe, and professional chauffeured car service in major cities across World.
       </p>
       <div className="flex items-start">
