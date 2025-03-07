@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Navbar from "@/components/Navbar/Navbar";
 import Link from 'next/link';
+import Footer from '@/components/Footer/Footer';
 
 export default function Menu() {
     return (
@@ -208,6 +209,7 @@ export default function Menu() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 }

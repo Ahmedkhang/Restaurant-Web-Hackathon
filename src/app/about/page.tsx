@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
 
 import Image from 'next/image';
@@ -11,9 +12,9 @@ export default function Aboutus() {
     
     <Navbar />
          {/* // Main div  */}
-            <div className='relative lg:w-[1920px] text bg-white' >
+            <div className='relative w-full 2xl:w-[1920px] text bg-white' >
          {/* 2nd div bg-Image */}
-             <div className='w-full lg:w-[1920px] object-fit text-center'>
+             <div className='w-full 2xl:w-[1920px] object-fit text-center'>
                  <Image 
                 src='/bg-image.png'
                 alt=''
@@ -167,7 +168,7 @@ export default function Aboutus() {
 </section>
 </div> 
 </div>
-  
+  <Footer />
      </>
     
   )

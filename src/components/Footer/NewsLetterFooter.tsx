@@ -12,7 +12,7 @@ export default function NewsletterSection() {
           <input 
             type="email"
             placeholder="Enter Your Email"
-            className="flex-grow hidden lg:block bg-[#FF9F0D] text-white placeholder-white placeholder-opacity-60 px-4 py-2 rounded-l-md focus:outline-none"
+            className="flex-grow hidden lg:block bg-white text-white  placeholder-opacity-60 px-4 py-2 rounded-l-md focus:outline-none"
           />
           <button
             type="submit"

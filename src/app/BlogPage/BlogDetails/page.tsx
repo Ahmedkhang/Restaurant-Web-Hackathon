@@ -1,14 +1,15 @@
 import Image from 'next/image';
 import Navbar from '@/components/Navbar/Navbar';
+import Footer from '@/components/Footer/Footer';
 export default function BlogDetails(){
     return(
         <>
         <Navbar />
               {/* // Main div  */}
-        <div className='relative w-[1920px] text bg-white' >
+        <div className='relative w-full 2xl:w-[1920px] text bg-white' >
 
 {/* 2nd div bg-Image */}
-<div className='w-[1920px]  text-center'>
+<div className='w-full 2xl:w-[1920px]  text-center'>
     <Image 
     src='/bg-image.png'
     alt=''
@@ -31,9 +32,9 @@ export default function BlogDetails(){
 
               {/* main div */}
 
-              <div className='w-[1920px] flex h-[3450px] bg-white'> 
+              <div className='w-full 2xl:w-[1920px] flex h-[3450px] bg-white'> 
                 {/* left side */}
-                <div className='w-[872px] h-[845px] text-[#4F4F4F] mt-[130px] mx-[300px]'>
+                <div className='w-[872px] h-[845px] text-[#4F4F4F] mt-[130px] mx-[10px] 2xl:mx-[300px]'>
                         <Image 
                         src='/blogdetails1.png'
                         alt=''
@@ -380,6 +381,7 @@ himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo.</p>
             </div>
   
               </div>
+              <Footer />
         </>
     )
 

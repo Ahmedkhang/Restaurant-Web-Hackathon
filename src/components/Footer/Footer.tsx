@@ -8,7 +8,7 @@ import UsefulLinksSection from "./UseFullLinkFooter";
 
 export default function Footer() {
   return (
-    <footer className="w-full lg:w-[1920px] bg-[#0D0D0D] text-white">
+    <footer className="w-full 2xl:w-[1920px] bg-[#0D0D0D] text-white">
       <div className="container mx-auto px-4 py-16">
         <NewsletterSection />
         <div className="border-t border-[#FF9F0D] my-8"></div>
