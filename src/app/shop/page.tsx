@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
-import { Products } from '../../../types';
+import { foodTypes } from '../../../types';
 import { addToCart } from '../actions/actions';
 
 import Navbar from '@/components/Navbar/Navbar';
@@ -12,18 +12,18 @@ import Footer from '@/components/Footer/Footer';
 import Swal from 'sweetalert2';
 
 export default function Shop() {
-  const [foods, setFoods] = useState<Products[]>([]);
+  const [foods, setFoods] = useState<foodTypes[]>([]);
 
   useEffect(() => {
     async function fetchFoods() {
-      const fetchedFoods: Products[] = await client.fetch(`*[_type == 'food']`);
+      const fetchedFoods: foodTypes[] = await client.fetch(`*[_type == 'food']`);
       console.log('Fetched Foods:', fetchedFoods); // Debug: Check fetched data
       setFoods(fetchedFoods);
     }
     fetchFoods();
   }, []);
 
-  const handleCart = (e:React.MouseEvent, product:Products) => {
+  const handleCart = (e:React.MouseEvent, product:foodTypes) => {
             e.preventDefault();
       
             addToCart(product)

@@ -1,3 +1,4 @@
+import { Rule } from '@sanity/types'
 export default {
     name: 'chef',
     type: 'document',
@@ -16,7 +17,7 @@ export default {
           source:'name',
           maxLength:80,
         },
-        validation:Rule => Rule.required()       
+        validation:(Rule:Rule) => Rule.required(),      
       },
       {
         name: 'position',

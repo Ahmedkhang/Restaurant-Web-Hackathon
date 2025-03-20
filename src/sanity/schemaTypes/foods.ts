@@ -1,3 +1,6 @@
+import { Rule } from '@sanity/types'
+
+import { validation } from 'sanity';
 export default {
     name: 'food',
     type: 'document',
@@ -22,7 +25,7 @@ export default {
           source:'Food Name',
           maxLength:80,
         },
-        validation:Rule => Rule.required()        
+        validation:(Rule:Rule) =>Rule.required()  
       },
       {
         name: 'category',

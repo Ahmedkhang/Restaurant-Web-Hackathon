@@ -29,7 +29,7 @@ export interface chefTypes {
     image: { asset: { _ref: string } };
     available: boolean;
   }
-  export interface Products {
+  export type foodTypes = {
     originalPrice:number,
     id:string,
     inventory:number,

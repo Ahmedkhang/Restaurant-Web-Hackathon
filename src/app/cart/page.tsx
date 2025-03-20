@@ -1,6 +1,6 @@
 "use client";
 
-import {Products } from '../../../types'
+import { foodTypes } from '../../../types'
 import React, { useEffect, useState } from "react";
 import {
   getCartItems,
@@ -16,7 +16,7 @@ import { useRouter } from 'next/navigation';
 
 const CartPage = () => {
   const router = useRouter();
-  const [cartItems, setCartItems] = useState<Products[]>([]);
+  const [cartItems, setCartItems] = useState<foodTypes[]>([]);
   useEffect(() => {
       setCartItems(getCartItems())
 },[]);

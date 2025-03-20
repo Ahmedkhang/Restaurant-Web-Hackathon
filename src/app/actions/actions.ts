@@ -1,7 +1,7 @@
-import { Products } from '../../../types';
+import { foodTypes } from '../../../types';
 
-export const addToCart = (product: Products) => {
-  const cart: Products[] = JSON.parse(localStorage.getItem('cart') || '[]');
+export const addToCart = (product: foodTypes) => {
+  const cart: foodTypes[] = JSON.parse(localStorage.getItem('cart') || '[]');
 
   // Ensure cart is an array
   if (!Array.isArray(cart)) {
@@ -22,13 +22,13 @@ export const addToCart = (product: Products) => {
 };
 
 export const removeFromCart = (productId: string | number) => {
-  let cart: Products[] = JSON.parse(localStorage.getItem('cart') || '[]');
+  let cart: foodTypes[] = JSON.parse(localStorage.getItem('cart') || '[]');
   cart = cart.filter(item => item.id !== productId);
   localStorage.setItem('cart', JSON.stringify(cart)); // Save the updated array
 };
 export const updateCartQuantity = (productId : string|number , quantity:number) => {
 
- const cart : Products[] = JSON.parse(localStorage.getItem('cart') || '[]' )
+ const cart : foodTypes[] = JSON.parse(localStorage.getItem('cart') || '[]' )
  const productIndex = cart.findIndex(item => item.id === productId)
  if(productIndex > -1){
   cart[productIndex].inventory = quantity
@@ -36,7 +36,7 @@ export const updateCartQuantity = (productId : string|number , quantity:number) 
  localStorage.setItem("cart", JSON.stringify(cart));
 
 }
-export const getCartItems = (): Products[] => {
+export const getCartItems = (): foodTypes[] => {
   const cart = JSON.parse(localStorage.getItem("cart") || "[]");
   return Array.isArray(cart) ? cart : []; // Ensure it's always an array
 };

@@ -1,7 +1,7 @@
 'use client';
 import { getCartItems } from '@/app/actions/actions';
 import { useState, useEffect, ChangeEvent } from 'react';
-import { Products } from '../../types';
+import { foodTypes } from '../../types';
 import Link from 'next/link';
 import Image from 'next/image';
 import { CgChevronRight } from 'react-icons/cg';
@@ -26,7 +26,7 @@ const CheckOut = () => {
         city:false,
         zipcode:false,
     });
-    const [cartItems, setCartItems] = useState<Products[]>([]);
+    const [cartItems, setCartItems] = useState<foodTypes[]>([]);
     const [discount, setDiscount] = useState<number>(0);
 
     useEffect(() => {

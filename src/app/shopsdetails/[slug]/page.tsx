@@ -4,8 +4,10 @@ import { useEffect, useState } from 'react';
 import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
 import { useParams } from 'next/navigation';
-import { foodTypes } from '../../../../types';
+
 import Navbar from '@/components/Navbar/Navbar';
+import { foodTypes } from '../../../../types';
+
 
 export default function ShopDetails() {
   const params  = useParams();
