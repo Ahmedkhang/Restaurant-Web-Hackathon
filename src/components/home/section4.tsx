@@ -1,8 +1,8 @@
 import Image from 'next/image';
 const Section4 = () => {
  return(
-                <div className='w-full xl:w-[1920px] lg:h-[900px] bg-[#0D0D0D] h-auto '>
-                      <div className='w-[1320px] bg lg:mx-[300px] gap-20 flex-cols-1 lg:pt-[130px] lg:flex flex-cols-1 h-auto lg:h-[716px]'>
+                <div className='w-full 2xl:w-[1920px] lg:h-[900px] bg-[#0D0D0D] h-auto '>
+                      <div className='w-[1320px] md:mx-10 2xl:mx-[300px] gap-20 flex-cols-1 lg:pt-[130px] lg:flex flex-cols-1 h-auto lg:h-[716px]'>
                             
                             {/* left div */}
     

@@ -1,7 +1,7 @@
 import { Rule } from '@sanity/types'
 
 import { validation } from 'sanity';
-export default {
+const foodTypes = {
     name: 'food',
     type: 'document',
     title: 'Food',
@@ -83,3 +83,4 @@ export default {
     ],
 
   };
+  export default foodTypes

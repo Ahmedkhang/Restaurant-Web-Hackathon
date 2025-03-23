@@ -4,11 +4,11 @@ const Section5 = () => {
        
       <>
       
-      <div className='lg:w-[1920px] bg-[#0D0D0D] h-auto lg:h-[600px] w-full'>
+      <div className='2xl:w-[1920px] bg-[#0D0D0D] h-auto lg:h-[600px] w-full'>
 
 <h1 className='text-center text-4xl gap-10 font-bold text-white'><span className='text-orange-400'>Fr</span>om Our Menu</h1>
 
-<div className='w-full gap-10 lg:flex lg:w-[1320px] lg:mx-[300px] lg:py-[130px] '>
+<div className='w-full gap-10 lg:flex lg:w-[1320px] md:mx-10 2xl:mx-[300px] lg:py-[130px] '>
 
               {/* image div */}
 

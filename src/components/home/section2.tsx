@@ -5,10 +5,10 @@ export default function Section2(){
     return(
         <>
         {/* body section 2 */}
-<div className='w-full xl:w-[1920px] bg-[#0D0D0D]  text-white h-auto'>
+<div className='w-full 2xl:w-[1920px] bg-[#0D0D0D]  text-white h-auto'>
 
 {/* parent section 2 */}
- <div className='w-full lg:flex xl:w-[1320px] h-[700px] md:mx-[50px] pt-0 xl:mx-[300px] xl:pt-[130px]'>
+ <div className='w-full lg:flex 2xl:w-[1320px] h-[700px] md:mx-[50px] pt-0 2xl:mx-[300px] xl:pt-[130px]'>
 
  
  {/* left side */}
@@ -45,10 +45,10 @@ export default function Section2(){
       {/* right side */}
 
       <div className='lg:w-[660px] mt-5 h-[562px]'>
-        <Image src='/homeimg2.png' alt='' width={660} height={330} className='w-[320px] h-[300px]'/>
+        <Image src='/homeimg2.png' alt='' width={660} height={330} className='w-[320px] h-[300px] object-cover'/>
         <div className='flex-cols-1 lg:flex '>
-          <Image src='/homeimg3.png' alt='' width={322} height={194} className='w-[320px] h-[300px]'/>
-          <Image src='/homeimg4.png' alt='' width={322} height={194} className='w-[320px]'/>
+          <Image src='/homeimg3.png' alt='' width={322} height={194} className='w-[320px] h-[300px] object-cover'/>
+          <Image src='/homeimg4.png' alt='' width={322} height={194} className='w-[320px] object-cover'/>
         </div>
       </div>
       </div>
